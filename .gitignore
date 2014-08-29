@@ -1,0 +1,12 @@
+*~
+*.pyc
+*#*#
+*.swp
+*.DS_Store
+*.cproject
+*.project
+*.pydevproject
+*.log
+.venv_*
+.agignore
+db.sqlite3
