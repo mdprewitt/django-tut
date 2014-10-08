@@ -1,5 +1,6 @@
 from django.contrib import admin
 from polls.models import Poll
+from polls.models import Group
 from polls.models import Choice
 
 
@@ -19,4 +20,9 @@ class PollAdmin(admin.ModelAdmin):
     search_fields = ['question']
 
 
+class GroupAdmin(admin.ModelAdmin):
+    list_display = ('group', )
+
+
 admin.site.register(Poll, PollAdmin)
+admin.site.register(Group, GroupAdmin)

@@ -26,3 +26,8 @@ class Choice(models.Model):
 
     def __unicode__(self):  # Python 3: def __str__(self):
         return self.choice_text
+
+
+class Group(models.Model):
+    group = models.CharField(max_length=30)
+    polls = models.ManyToManyField(Poll)
